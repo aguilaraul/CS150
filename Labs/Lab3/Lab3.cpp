@@ -7,11 +7,11 @@ using namespace std;
 
 int main() {
     string border = "*******************************";
-    int itemWidth = 19, priceWidth = 7;
+    int itemWidth = 24, charWidth = 1, priceWidth = 6;
     string item1 = "", item2 = "", item3 = "";
     double price1 = 0, price2 = 0, price3 = 0;
     double taxRate = 0;
-    double subtotal, total;
+    double subtotal, total, tax;
 
     // Ask for first item
     cout << "Please enter the first item:\n";
@@ -44,38 +44,48 @@ int main() {
 
     //Print receipt
     cout << border << endl;
+
+    // Print items
     cout << left << setw(itemWidth) << item1;
-    cout << right << setw(priceWidth) << "$ " << fixed << setprecision(2) << price1;
+    cout << right << setw(charWidth) << "$";
+    cout << setw(priceWidth) << fixed << setprecision(2) << price1;
     cout << endl;
 
     cout << left << setw(itemWidth) << item2;
-    cout << right << setw(priceWidth) << "$ " << fixed << setprecision(2) << price2;
+    cout << right << setw(charWidth) << "$";
+    cout << setw(priceWidth) << price2;
     cout << endl;
 
     cout << left << setw(itemWidth) << item3;
-    cout << right << setw(priceWidth) << "$ " << fixed << setprecision(2) << price3;
+    cout << right << setw(charWidth) << "$";
+    cout << setw(priceWidth) << price3;
     cout << endl;
 
     cout << endl;
 
+    // Calculate totals
     subtotal = price1 + price2 + price3;
-
+    tax = taxRate * subtotal;
+    total = subtotal + tax;
+    
+    // Print totals
     cout << left << setw(itemWidth) << "Subtotal";
-    cout << right << setw(priceWidth) << "$ " << fixed << setprecision(2) << subtotal;
+    cout << right << setw(charWidth) << "$";
+    cout << setw(priceWidth) << subtotal;
     cout << endl;
 
     cout << left << setw(itemWidth) << "Tax";
-    cout << right << setw(priceWidth) << "$ " << fixed << setprecision(2) << taxRate * subtotal;
+    cout << right << setw(charWidth) << "$";
+    cout << setw(priceWidth) << tax;
     cout << endl;
 
-    total = subtotal + (subtotal* taxRate);
-
     cout << left << setw(itemWidth) << "Total";
-    cout << right << setw(priceWidth) << "$ " << fixed << setprecision(2) << total;
+    cout << right << setw(charWidth) << "$";
+    cout << setw(priceWidth) << total;
     cout << endl;
 
     cout << border << endl;
-    cout << "Thank you for shopping with us\n";
+    cout << "Thank you for shopping with us!\n";
     cout << border << endl;
 
     return 0;
