@@ -5,22 +5,18 @@
 */
 
 #include <iostream>
-#include <istream>
-#include <string>
 
 using namespace std;
 
 int main() {
-    bool takingClass = false;
-    char answer[2];
+    char answer;
     char grade;
 
+    // Ask the user if they are taking a class
     cout << "Are you taking a class?" << endl;
-    cin.get(answer, 2);
+    answer = cin.get();
 
-    cout << "\'" << answer << "\'" << endl;
-
-    if (strcmp(answer, "Y") == 0 || strcmp(answer, "y") == 0) {
+    if (answer == 'Y' || answer == 'y') {
         cout << "Please enter your grade:" << endl;
         cin.ignore();
         grade = cin.get();
@@ -40,8 +36,8 @@ int main() {
             break;
         }
 
-    } else if (strcmp(answer, "N") == 0 || strcmp(answer,"n") == 0) {
-        cout << "Thank you for using our system." << endl;
+    } else if (answer == 'N' || answer == 'n') {
+        cout << "Thank you for using the system." << endl;
     } else {
         cout << "Invalid input. Program exiting." << endl;
     }
