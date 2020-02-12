@@ -1,24 +1,26 @@
 /*
-    Raul Aguilar
-    CS 150 1686
-    Homework 1: If/Switch
+    @author     Raul Aguilar
+    @date       February 11, 2020
+    @class      CS 150 1686
+    @assignment Homework 1: If/Switch
 */
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-    char answer;
+    string answer;
+    char firstChar;
     char grade;
 
-    // Ask the user if they are taking a class
     cout << "Are you taking a class?" << endl;
-    answer = cin.get();
+    getline(cin, answer);
+    firstChar = answer[0];
 
-    if (answer == 'Y' || answer == 'y') {
+    if (firstChar == 'Y' || firstChar == 'y') {
         cout << "Please enter your grade:" << endl;
-        cin.ignore();
         grade = cin.get();
 
         switch (toupper(grade)) {
@@ -36,7 +38,7 @@ int main() {
             break;
         }
 
-    } else if (answer == 'N' || answer == 'n') {
+    } else if (firstChar == 'N' || firstChar == 'n') {
         cout << "Thank you for using the system." << endl;
     } else {
         cout << "Invalid input. Program exiting." << endl;
