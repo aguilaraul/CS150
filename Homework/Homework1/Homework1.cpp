@@ -1,6 +1,6 @@
 /*
     @author     Raul Aguilar
-    @date       February 11, 2020
+    @date       February 20, 2020
     @class      CS 150 1686
     @assignment Homework 1: If/Switch
 */
@@ -11,7 +11,7 @@
 using namespace std;
 
 int main() {
-    string answer;
+    string answer = "";
     char firstChar;
     char grade;
 
