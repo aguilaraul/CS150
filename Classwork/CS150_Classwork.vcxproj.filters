@@ -13,10 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\edu.miracosta.cs150">
+      <UniqueIdentifier>{54db149c-3a68-44be-bf69-5fff3fff445c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Thur_20200220.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\edu.miracosta.cs150</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -8,7 +8,7 @@ int main() {
 	double arr[SIZE] = { 0 };
 	int index = 0;
 
-	for (int i = 0; i < 1000; i++) {
+	for (int i = 0; i < SIZE; i++) {
 		arr[i] = i * 7.5;
 	}
 	
@@ -16,7 +16,7 @@ int main() {
 	cin >> index;
 	cout << endl;
 	
-	if (index < 0 || index > 999) {
+	if (index < SIZE-SIZE || index > SIZE-1) {
 		cout << "Index out of range." << endl;
 	}
 	else {
