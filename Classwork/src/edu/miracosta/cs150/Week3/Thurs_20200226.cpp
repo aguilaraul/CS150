@@ -1,4 +1,10 @@
-// FLow control: continued branching
+/*
+    Raul Aguilar
+    CS150
+    Week 3 Thursday, February 06, 2020
+    FLow control: continued branching
+*/
+
 #include <iostream>
 
 using namespace std;

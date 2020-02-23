@@ -1,9 +1,10 @@
 /*
 	@author	Raul Aguilar
 	@date	February 18, 2020
-	Lab 10: Print the multiplication table from 1-9 similarly to what is shown below,
-	including the legend on the top and sides.  Calculate the values and use nested
-	loops to complete this lab. Your table should line up nicely (remember setw!)
+	Lab 10: Print the multiplication table from 1-9 similarly to what is shown
+	below, including the legend on the top and sides. Calculate the values and
+	use nested loops to complete this lab. Your table should line up nicely
+	(remember setw!)
 */
 
 #include <iostream>

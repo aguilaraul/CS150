@@ -1,4 +1,9 @@
-// Arrays
+/*
+    Raul Aguilar
+    CS150
+    Week 4 Thursday, February 20, 2020
+    Arrays
+*/
 
 #include <iostream>
 

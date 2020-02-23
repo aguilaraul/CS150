@@ -1,5 +1,10 @@
-// Thurs_20200130.cpp : This file contains the 'main' function. Program execution begins and ends there.
-// Formatting and Manipulating Input and Output, String Operators, Math Operations
+/*
+    Raul Aguilar
+    CS150
+    Week 2 Thursday, January 30, 2020
+    Formatting and Manipulating Input and Output, String Operators,
+    Math Operations
+*/
 
 #include <iostream>
 #include <iomanip>
@@ -8,7 +13,7 @@
 using namespace std;
 
 int main() {
-    
+
     //cout << left << setw(30) << "\"Hello World!\"";
     //cout << setw(14) << "|Here";
 
@@ -22,4 +27,3 @@ int main() {
 
     return 0;
 }
-

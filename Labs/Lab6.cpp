@@ -1,7 +1,6 @@
 /*
-	Raul Aguilar
-	CS 150
-	Lab 6: Flow control using switch statements
+	@author Raul Aguilar
+	CS150 Lab 6: Flow control using switch statements
 */
 #include <iostream>
 

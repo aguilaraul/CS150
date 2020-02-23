@@ -1,4 +1,10 @@
-// Flow Control: Brannching
+/*
+    Raul Aguilar
+    CS150
+    Week 3 Thursday, February 04, 2020
+    Flow Control: Brannching
+*/
+
 #include <iostream>
 
 using namespace std;
