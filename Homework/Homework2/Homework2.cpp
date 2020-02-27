@@ -1,6 +1,6 @@
 /**
 	@author	Raul Aguilar
-	@date	March 5, 2020
+	@date	Tuesday March 10, 2020
 	Homework 2: Nested loops and file output
 */
 
@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     ofstream outputFile;
-    outputFile.open("hw2_triangle.txt");
+    outputFile.open("triangle.txt");
     int size = 0;
 
     do {
@@ -23,23 +23,21 @@ int main() {
     // Top of pyramid
     for(int i = 1; i < size; i++) {
         for(int j = 0; j < i; j++) {
-            cout << "*";
             outputFile << "*";
         }
-        cout << endl;
         outputFile << endl;
     }
 
     // Midpoint to bottom of pyramid
     for(int i = size; i > 0; i--) {
         for(int j = i; j > 0; j--) {
-            cout << "*";
             outputFile << "*";
         }
-        cout << endl;
         outputFile << endl;
     }
-
     outputFile.close();
+    
+    cout << "Triangle saved to file." << endl;
+    
     return 0;
 }
