@@ -12,19 +12,21 @@
 
 using namespace std;
 
+const int SIZE = 9;
+
 int main() {
+	//print the top row of numbers
 	cout << left << setw(3) << "";
-	for (int i = 1; i <= 9; i++) {
+	for (int i = 1; i <= SIZE; i++) {
 		cout << right << setw(3) << i;
 	}
 	cout << endl;
 	cout << right << setw(30) << "___________________________" << endl;
-	//cout << right << setw(30) << "1 2 3 4 5 6 7 8 9" << endl;
-	for (int i = 1; i <= 9; i++) {
-		cout << i << " |";
-
-		for (int j = 1; j <= 9; j++) {
-			cout << setw(3) << i * j;
+	// Print the multiplication table
+	for (int row = 1; row <= SIZE; row++) {
+		cout << row << " |";
+		for (int col = 1; col <= SIZE; col++) {
+			cout << setw(3) <<  row * col;
 		}
 		cout << endl;
 	}
