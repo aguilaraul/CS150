@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Thurs_20200227.cpp">
+    <ClCompile Include="Tues_20200303.cpp">
       <Filter>Source Files\edu.miracosta.cs150</Filter>
     </ClCompile>
   </ItemGroup>

@@ -19,7 +19,7 @@ int main() {
 	getline(cin, fileName);
 	fileName = fileName + ".txt";
 	
-	ifstream fin(fileName);
+	ifstream fin(fileName.c_str());
 	if (!fin) {
 		cout << "File could not be opened." << endl;
 	}

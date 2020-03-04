@@ -10,12 +10,13 @@ using namespace std;
 
 int main() {
 	int evenCounter = 0, oddCounter = 0;
-	int input = -1;
+	int input;
 	
-	do {
-		cout << "Enter an integer (-1 to quit)" << endl;
-		cin >> input;
-		
+	cout << "Enter an integer (-1 to quit)" << endl;
+	cin >> input;
+	cout << endl;
+	
+	while(input > -1) {
 		if(input > -1) {
 			if(input % 2 == 0) {
 				cout << input << " is even." << endl;
@@ -25,9 +26,10 @@ int main() {
 				oddCounter++;
 			}
 		}
+		cout << "Enter an integer (-1 to quit)" << endl;
+		cin >> input;
 		cout << endl;
-	} while(input > -1);
-	
+	}
 	
 	if(evenCounter > 0 || oddCounter > 0) {
 		cout << "Odd numbers: " << oddCounter << endl;
