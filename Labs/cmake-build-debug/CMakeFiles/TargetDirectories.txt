@@ -1,3 +1,0 @@
-C:/Users/raula/GitHub/CS150/Labs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/raula/GitHub/CS150/Labs/cmake-build-debug/CMakeFiles/Labs.dir
-C:/Users/raula/GitHub/CS150/Labs/cmake-build-debug/CMakeFiles/edit_cache.dir

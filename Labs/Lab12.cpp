@@ -8,7 +8,7 @@
 
 using namespace std;
 
-const int SIZE = 10;
+const int SIZE = 13;
 const int WIDTH = 3;
 
 int main() {
@@ -25,7 +25,9 @@ int main() {
 	for (int i = 0; i < SIZE; i++) {
 		cout << right << setw(WIDTH) << i;
 	}
+	
 	cout << endl;
+	
 	// make and print border
 	string border = "";
 	for (int i = 0; i < SIZE*4; i++) {
