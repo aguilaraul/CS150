@@ -11,7 +11,6 @@ using namespace std;
 
 int main() {
     ofstream outputFile;
-    outputFile.open("triangle.txt");
     int size = 0;
 
     do {
@@ -19,7 +18,9 @@ int main() {
         cin >> size;
     } while (size < 1 || size > 50);
     cout << endl;
-
+    
+    // Open the output file
+    outputFile.open("triangle.txt");
     // Top of pyramid
     for(int i = 1; i < size; i++) {
         for(int j = 0; j < i; j++) {
