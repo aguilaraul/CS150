@@ -1,18 +1,19 @@
 # CS150
 Classwork, homework, and projects during Spring 2020 CS150
 
-### Classwork
-1. Week 1: Program template, math, variables, cin and cout, flowcharts
-2. Week 2
-    * Data Types
-    * Formatting and Manipulating Input and Output, String operations,
-    Math operations
-3. Week 3
-    * Flow Control: Branching (if/else/switch)
-    * Loops and Scope
-4. Week 4: Arrays
-5. Week 5: File Input / Output
+### Notes
+1. Program Template, Math, Variables, cin and cout, Flowcharts
+2. Data Types
+3. Formatting and Manipulating Input and Output, String Operations, Math Operations
+4. Flow Control: Branching
+5. Loops and Scope
+6. Arrays
+7. File I/O
+8. Functions
+9. Structs
+10. Classes 
 
 ### Homework
 * Homework 1: If/Else
 * Homework 2: Nested Loops and File Output
+* Homework 3: Arrays
