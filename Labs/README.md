@@ -1,8 +1,8 @@
 # Labs
 
 #### 1. Lab 1
-Create a program that asks the user to enter two integer numbers, then tells the
-user: the sum of the numbers, the difference of the numbers (first minus
+Create a program that asks the user to enter two integer numbers, then tells
+the user: the sum of the numbers, the difference of the numbers (first minus
 second), the product of the numbers, and the quotient of the numbers
 with remainder. Each of these should be output as a separate line and include
 the equation.
@@ -66,11 +66,11 @@ entered" instead of saying 0 even numbers and 0 odd numbers.
 
 #### 9. Lab 9
 Ask the user to enter an integer (positive or negative does not matter). Repeat
-the integer given by the user and tell them whether it is even or odd. After the
-user enters the first integer, and after each subsequent integer entered, ask
-the user if they wish to enter another integer.  If they answer 'Y' or 'y' then
-repeat, if they answer 'N' , 'n', or any other character then tell them how many
-odd numbers they entered and how many even numbers they entered.
+the integer given by the user and tell them whether it is even or odd. After
+the user enters the first integer, and after each subsequent integer entered,
+ask the user if they wish to enter another integer.  If they answer 'Y' or 'y'
+then repeat, if they answer 'N' , 'n', or any other character then tell them
+how many odd numbers they entered and how many even numbers they entered.
 
 Note that the user should always enter at least one integer, only ask them
 if they have another after the first entry.
@@ -85,9 +85,9 @@ Create an array of 1000 __double__ datatype elements, store 7.5 times the array
 slot number as the value in each array slot.
 
 __After creating and filling the entire array,__ ask the user to enter an
-integer between 0 and 999 - print the value of that element of the array (if the
-user entered 121 you would print the contents of array slot 121 which would be
-907.5).
+integer between 0 and 999 - print the value of that element of the array (if
+the user entered 121 you would print the contents of array slot 121 which would
+be 907.5).
 
 Input validation: Do not check of range values! (i.e. do NOT do anything that
 may cause a segmentation fault). Instead inform the user that the value is out
@@ -109,3 +109,33 @@ using ofstream.
 Have the user input a filename to read in ints from. Print each to the screen,
 one per line and keep a running total. Print the total at the end. If the file
 does not exist say so and do not print the total.
+
+#### 15. Lab 15 +  Lab 16
+##### Lab 15
+Create an algorithm (flowchart or written out) for lab 16
+##### Lab 16
+Create a program that simulates a vending machine -- your program will ask the
+user to enter a price for an item first, then enter the amount of money
+deposited. Your program should print the change that is given to the user __to
+a text file__, as a number of quarters, dimes, nickels, and pennies. __Change
+should be given using the smallest number of coins possible (change higher than
+1 dollar can be given in quarters.)__ If the user will receive no change, so
+"no change" instead of 0 quarters, 0 dimes, 0 nickels, 0 pennies. If the user
+enters less money than the price of the item then give an error message on the
+screen stating "not enough money inserted" and print nothing to the file. After
+each transaction, whether enough money or not, ask the user if they have
+another transaction (enter capital or lowercase Y or N), and repeat if so.
+Note: You can assume that the user will type the price of as a decimal number
+without a dollar sign. __Rounding issues within one penny are OK.__
+
+#### 25. Lab 25
+Create an array of 10 integers containing the following values (in this order):
+12, -7, 3, 17, 42, 6, 18, -15, 0, 1. Create a function called seqSearch that
+takes a const array and an integer key as parameters, and returns the array
+slot number that the key was found in. If the key was not found, the function
+should return -1. Main should use the function to have the user enter a number
+and print the array slot it was found in, or that it was not found.
+
+#### 26. Lab 26
+Modify the supplied bSort.cpp program to bubble sort in ascending order instead
+of descending order. Do NOT modify main, only bSort itself.
